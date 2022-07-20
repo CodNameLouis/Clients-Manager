@@ -12,7 +12,7 @@ class AddClientsPage extends GetView<AddClientsController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xffce87e9),
+      backgroundColor: const Color(0xfff5ebe9),
       appBar: AppBar(
         centerTitle: true,
         elevation: 0,
