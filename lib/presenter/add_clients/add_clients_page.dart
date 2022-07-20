@@ -1,15 +1,13 @@
-// ignore_for_file: use_full_hex_values_for_flutter_colors
-
+import 'package:clients_manager/presenter/add_clients/widgets/body_add_clients.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import './home_controller.dart';
-import 'widgets/body_home.dart';
+import './add_clients_controller.dart';
 
-class HomePage extends GetView<HomeController> {
-  const HomePage({Key? key}) : super(key: key);
+class AddClientsPage extends GetView<AddClientsController> {
+  const AddClientsPage({Key? key}) : super(key: key);
 
-  static const route = '/home';
+  static const route = '/add_clients';
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +18,7 @@ class HomePage extends GetView<HomeController> {
         elevation: 0,
         backgroundColor: Colors.transparent,
         title: const Text(
-          'Gerenciamento De Clientes',
+          'Adicionar cliente',
           style: TextStyle(
             color: Colors.black,
             fontSize: 22,
@@ -28,7 +26,7 @@ class HomePage extends GetView<HomeController> {
           ),
         ),
       ),
-      body: const BodyHome(),
+      body: const BodyAddClients(),
     );
   }
 }

@@ -16,5 +16,10 @@ class AppPages {
       page: () => const HomePage(),
       binding: HomeBindings(),
     ),
+    GetPage(
+      name: AddClientsPage.route,
+      page: () => const AddClientsPage(),
+      binding: AddClientsBindings(),
+    ),
   ];
 }
