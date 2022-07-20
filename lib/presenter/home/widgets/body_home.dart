@@ -5,10 +5,15 @@ class BodyHome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 200,
-      width: 200,
-      color: Colors.black,
+    return Column(
+      children: [
+        Container(
+          margin: const EdgeInsets.all(20),
+          height: 70,
+          width: 350,
+          color: Colors.white,
+        )
+      ],
     );
   }
 }
