@@ -9,16 +9,16 @@ class BodySplash extends StatelessWidget {
       children: [
         Container(
           decoration: const BoxDecoration(
-            gradient: LinearGradient(
+            gradient: RadialGradient(
+              center: Alignment.topCenter,
+              radius: 2,
               stops: [
-                0.3,
-                0.8,
+                0.2,
+                1.8,
               ],
-              begin: Alignment.topRight,
-              end: Alignment.bottomLeft,
               colors: [
-                Color(0xff6e3668),
-                Color(0xffc23f81),
+                Color(0xff56365F),
+                Color(0xffe53998),
               ],
             ),
           ),
@@ -29,7 +29,7 @@ class BodySplash extends StatelessWidget {
             children: [
               Container(
                 decoration: BoxDecoration(
-                  color: Colors.transparent.withOpacity(0.1),
+                  color: Colors.grey.shade300.withOpacity(0.1),
                   borderRadius: BorderRadius.circular(10),
                 ),
                 padding: const EdgeInsets.all(10),
