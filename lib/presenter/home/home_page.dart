@@ -14,7 +14,11 @@ class HomePage extends GetView<HomeController> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+<<<<<<< HEAD
         backgroundColor: const Color.fromARGB(255, 188, 157, 201),
+=======
+        backgroundColor: const Color(0xfff5ebe9),
+>>>>>>> 4851ec9bcc53d8513f0f84307d76126f87297205
         appBar: AppBar(
           centerTitle: true,
           elevation: 0,
