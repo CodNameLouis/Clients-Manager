@@ -14,11 +14,11 @@ class HomePage extends GetView<HomeController> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: const Color(0xffce87e9),
+        backgroundColor: const Color.fromARGB(255, 188, 157, 201),
         appBar: AppBar(
           centerTitle: true,
           elevation: 0,
-          backgroundColor: Colors.grey.shade200.withOpacity(0.5),
+          backgroundColor: Colors.transparent,
           title: const Text(
             'Clientes',
             style: TextStyle(
