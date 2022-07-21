@@ -1,8 +1,8 @@
 import 'package:clients_manager/shared/widgets/defaultTextFormField.dart';
 import 'package:flutter/material.dart';
 
-class BodyAddClients extends StatelessWidget {
-  const BodyAddClients({Key? key}) : super(key: key);
+class BodyEditClient extends StatelessWidget {
+  const BodyEditClient({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class BodyAddClients extends StatelessWidget {
             backgroundColor: Colors.black.withOpacity(.05),
           ),
           child: const Text(
-            'Adicionar foto',
+            'Alterar foto',
             style: TextStyle(
               color: Colors.black,
               fontSize: 15,

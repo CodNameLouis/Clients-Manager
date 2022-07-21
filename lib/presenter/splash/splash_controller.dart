@@ -1,4 +1,4 @@
-import 'package:clients_manager/routes/routes_imports.dart';
+import 'package:clients_manager/presenter/home/home_page.dart';
 import 'package:get/get.dart';
 
 class SplashController extends GetxController {
