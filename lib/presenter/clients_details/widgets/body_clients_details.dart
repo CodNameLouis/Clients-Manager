@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../shared/widgets/default_text_button.dart';
 import 'card_details.dart';
 
 class BodyClientsDetails extends StatelessWidget {
@@ -14,6 +15,17 @@ class BodyClientsDetails extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         CardDetails(height: height, width: width),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: const [
+            DefaultTextButton(
+              title: 'Editar',
+            ),
+            DefaultTextButton(
+              title: 'Excluir',
+            ),
+          ],
+        ),
       ],
     );
   }
