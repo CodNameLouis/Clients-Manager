@@ -21,5 +21,10 @@ class AppPages {
       page: () => const AddClientsPage(),
       binding: AddClientsBindings(),
     ),
+    GetPage(
+      name: ClientsDetailsPage.route,
+      page: () => const ClientsDetailsPage(),
+      binding: ClientsDetailsBindings(),
+    ),
   ];
 }
