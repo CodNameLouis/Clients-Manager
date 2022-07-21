@@ -1,5 +1,9 @@
 export '../presenter/add_clients/add_clients_bindings.dart';
 export '../presenter/add_clients/add_clients_page.dart';
+export '../presenter/clients_details/clients_details_bindings.dart';
+export '../presenter/clients_details/clients_details_page.dart';
+export '../presenter/edit_client/edit_client_bindings.dart';
+export '../presenter/edit_client/edit_client_page.dart';
 export '../presenter/home/home_bindings.dart';
 export '../presenter/home/home_page.dart';
 export '../presenter/splash/splash_bindings.dart';

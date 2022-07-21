@@ -1,5 +1,3 @@
-import 'package:clients_manager/presenter/edit_client/edit_client_bindings.dart';
-import 'package:clients_manager/presenter/edit_client/edit_client_page.dart';
 import 'package:get/get.dart';
 
 import 'routes_imports.dart';
@@ -22,6 +20,11 @@ class AppPages {
       name: AddClientsPage.route,
       page: () => const AddClientsPage(),
       binding: AddClientsBindings(),
+    ),
+    GetPage(
+      name: ClientsDetailsPage.route,
+      page: () => const ClientsDetailsPage(),
+      binding: ClientsDetailsBindings(),
     ),
     GetPage(
       name: EditClientPage.route,
