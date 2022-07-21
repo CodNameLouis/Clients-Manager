@@ -18,14 +18,14 @@ class CustomDetails extends StatelessWidget {
           title,
           style: const TextStyle(
             color: Colors.black54,
-            fontSize: 18,
+            fontSize: 15,
           ),
         ),
         subtitle: Text(
           subtitle,
           style: const TextStyle(
             color: Colors.black,
-            fontSize: 20,
+            fontSize: 18,
           ),
         ),
       ),

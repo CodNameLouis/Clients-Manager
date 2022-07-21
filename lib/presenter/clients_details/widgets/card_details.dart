@@ -65,12 +65,12 @@ class CardDetails extends StatelessWidget {
               subtitle: "Jaquelinevieira1010@outlook.com",
             ),
             const CustomDetails(
-              title: "Atualizado em:",
-              subtitle: "20/07/2022",
-            ),
-            const CustomDetails(
               title: "Criado em:",
               subtitle: "18/07/2022",
+            ),
+            const CustomDetails(
+              title: "Atualizado em:",
+              subtitle: "20/07/2022",
             ),
           ],
         ),

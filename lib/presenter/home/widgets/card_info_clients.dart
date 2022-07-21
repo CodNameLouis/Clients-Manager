@@ -2,15 +2,19 @@ import 'package:clients_manager/presenter/clients_details/clients_details_page.d
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../../infra/models/responses/user_response_model.dart';
+
 class CardInfoClients extends StatelessWidget {
   const CardInfoClients({
     Key? key,
     required this.height,
     required this.width,
+    required this.user,
   }) : super(key: key);
 
   final double height;
   final double width;
+  final UserResponseModel user;
 
   @override
   Widget build(BuildContext context) {
@@ -37,8 +41,8 @@ class CardInfoClients extends StatelessWidget {
           ),
         ),
         child: Row(
-          children: const [
-            Padding(
+          children: [
+            const Padding(
               padding: EdgeInsets.all(12.0),
               child: CircleAvatar(
                 radius: 28,
@@ -49,15 +53,15 @@ class CardInfoClients extends StatelessWidget {
             Expanded(
               child: ListTile(
                 title: Text(
-                  "Jaque Vieira",
-                  style: TextStyle(
+                  user.name,
+                  style: const TextStyle(
                     color: Colors.black,
                     fontSize: 20,
                   ),
                 ),
                 subtitle: Text(
-                  "Jaquelinevieira1010@outlook.com",
-                  style: TextStyle(
+                  user.email,
+                  style: const TextStyle(
                     color: Colors.black,
                     fontSize: 16,
                   ),
