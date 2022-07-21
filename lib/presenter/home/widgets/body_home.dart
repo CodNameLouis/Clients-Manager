@@ -12,16 +12,22 @@ class BodyHome extends StatelessWidget {
     double width = MediaQuery.of(context).size.width;
     return Column(
       children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [DefaultTextFormWidget(height: height, width: width)],
-        ),
+        DefaultTextFormWidget(height: height, width: width),
         const SizedBox(
           height: 10,
         ),
-        const CardInfoClients(),
-        const CardInfoClients(),
-        const CardInfoClients(),
+        CardInfoClients(
+          height: height,
+          width: width,
+        ),
+        CardInfoClients(
+          height: height,
+          width: width,
+        ),
+        CardInfoClients(
+          height: height,
+          width: width,
+        ),
       ],
     );
   }

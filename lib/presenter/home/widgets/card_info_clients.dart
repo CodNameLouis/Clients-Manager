@@ -3,14 +3,19 @@ import 'package:flutter/material.dart';
 class CardInfoClients extends StatelessWidget {
   const CardInfoClients({
     Key? key,
+    required this.height,
+    required this.width,
   }) : super(key: key);
+
+  final double height;
+  final double width;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.all(10),
-      height: 80,
-      width: 380,
+      height: height * 0.12,
+      width: width * 1,
       decoration: BoxDecoration(
         boxShadow: [
           BoxShadow(
@@ -22,7 +27,7 @@ class CardInfoClients extends StatelessWidget {
         ],
         color: Colors.black.withOpacity(0.05),
         borderRadius: const BorderRadius.all(
-          Radius.circular(20),
+          Radius.circular(10),
         ),
       ),
       child: Row(

@@ -14,9 +14,12 @@ class BodyClientsDetails extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        CardDetails(height: height, width: width),
+        CardDetails(
+          height: height,
+          width: width,
+        ),
         Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: const [
             DefaultTextButton(
               title: 'Editar',

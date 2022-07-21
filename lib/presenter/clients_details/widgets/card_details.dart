@@ -29,7 +29,7 @@ class CardDetails extends StatelessWidget {
         ],
         color: Colors.black.withOpacity(0.05),
         borderRadius: const BorderRadius.all(
-          Radius.circular(20),
+          Radius.circular(10),
         ),
       ),
       child: Padding(

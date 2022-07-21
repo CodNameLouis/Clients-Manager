@@ -56,8 +56,9 @@ class DefaultTextFormWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: const EdgeInsets.all(10),
       height: height * 0.08,
-      width: width * 0.9,
+      width: width * 1,
       alignment: Alignment.center,
       decoration: BoxDecoration(
         color: Colors.black.withOpacity(.05),
