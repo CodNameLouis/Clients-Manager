@@ -22,6 +22,8 @@ class DefaultTextFormWidget extends StatelessWidget {
   final Widget? suffixIcon;
   final bool showSuffixIcon;
   final double paddingHorizontal;
+  final double height;
+  final double width;
 
   const DefaultTextFormWidget({
     Key? key,
@@ -47,14 +49,15 @@ class DefaultTextFormWidget extends StatelessWidget {
       color: Colors.red,
     ),
     this.paddingHorizontal = 0,
+    required this.height,
+    required this.width,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-      height: context.width / 8,
-      width: context.width / 1,
+      height: height * 0.08,
+      width: width * 0.9,
       alignment: Alignment.center,
       decoration: BoxDecoration(
         color: Colors.black.withOpacity(.05),
