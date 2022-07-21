@@ -30,7 +30,10 @@ class BodyEditClient extends StatelessWidget {
           labelText: "Email",
           prefixIcon: Icons.email,
         ),
-        const DefaultTextButton(title: 'Alterar foto')
+        DefaultTextButton(
+          title: 'Alterar foto',
+          taped: () {},
+        )
       ],
     );
   }

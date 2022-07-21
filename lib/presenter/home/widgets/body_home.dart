@@ -1,4 +1,5 @@
 import 'package:clients_manager/shared/widgets/defaultTextFormField.dart';
+import 'package:clients_manager/shared/widgets/default_text_button.dart';
 import 'package:flutter/material.dart';
 
 import 'card_info_clients.dart';
@@ -13,6 +14,7 @@ class BodyHome extends StatelessWidget {
     return Column(
       children: [
         DefaultTextFormWidget(height: height, width: width),
+        DefaultTextButton(title: "Pesquisar", taped: () {}),
         const SizedBox(
           height: 10,
         ),

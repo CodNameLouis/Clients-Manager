@@ -31,7 +31,10 @@ class BodyAddClients extends StatelessWidget {
           labelText: "Email",
           prefixIcon: Icons.email,
         ),
-        const DefaultTextButton(title: 'Adicionar foto'),
+        DefaultTextButton(
+          title: 'Adicionar foto',
+          taped: () {},
+        ),
       ],
     );
   }
