@@ -7,7 +7,7 @@ class UserResponseModel {
   final String email;
   final String userName;
   final String updateAt;
-  final int id;
+  final String id;
 
   UserResponseModel({
     required this.createAt,
@@ -41,7 +41,7 @@ class UserResponseModel {
       email: map['email'] ?? '',
       userName: map['userName'] ?? '',
       updateAt: map['updateAt'] ?? '',
-      id: map['id']?.toInt() ?? 0,
+      id: map['id']?.toString() ?? "",
     );
   }
 

@@ -29,9 +29,7 @@ class HomePage extends GetView<HomeController> {
             ),
           ),
         ),
-        body: const SingleChildScrollView(
-          child: BodyHome(),
-        ),
+        body: const BodyHome(),
         bottomNavigationBar: DefaultTextButton(
           title: 'Adicionar',
           taped: () {

@@ -42,12 +42,12 @@ class CardInfoClients extends StatelessWidget {
         ),
         child: Row(
           children: [
-            const Padding(
-              padding: EdgeInsets.all(12.0),
+             Padding(
+              padding: const EdgeInsets.all(12.0),
               child: CircleAvatar(
                 radius: 28,
                 backgroundColor: Colors.purple,
-                backgroundImage: NetworkImage("http://loremflickr.com/640/480"),
+                backgroundImage: NetworkImage(user.photo),
               ),
             ),
             Expanded(
