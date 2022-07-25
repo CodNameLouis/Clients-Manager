@@ -21,7 +21,7 @@ class AddClientsPage extends GetView<AddClientsController> {
           'Adicionar cliente',
           style: TextStyle(
             color: Colors.black,
-            fontSize: 22,
+            fontSize: 30,
             fontWeight: FontWeight.w500,
           ),
         ),

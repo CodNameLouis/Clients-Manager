@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../infra/models/responses/user_response_model.dart';
 import 'custom_details.dart';
 
 class CardDetails extends StatelessWidget {
@@ -7,10 +8,12 @@ class CardDetails extends StatelessWidget {
     Key? key,
     required this.height,
     required this.width,
+    required this.user,
   }) : super(key: key);
 
   final double height;
   final double width;
+  final UserResponseModel user;
 
   @override
   Widget build(BuildContext context) {
@@ -21,15 +24,14 @@ class CardDetails extends StatelessWidget {
       decoration: BoxDecoration(
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.07),
-            spreadRadius: 5,
-            blurRadius: 7,
-            offset: const Offset(0, 3),
+            color: Colors.grey.shade400,
+            blurRadius: 8,
+            spreadRadius: 0.1,
+            offset: const Offset(6, 6),
           ),
         ],
-        color: Colors.black.withOpacity(0.05),
         borderRadius: const BorderRadius.all(
-          Radius.circular(20),
+          Radius.circular(10),
         ),
       ),
       child: Padding(
@@ -37,36 +39,39 @@ class CardDetails extends StatelessWidget {
         child: Column(
           children: [
             Row(
-              children: const [
+              children: [
                 CircleAvatar(
                   radius: 28,
                   backgroundColor: Colors.purple,
-                  backgroundImage:
-                      NetworkImage("http://loremflickr.com/640/480"),
+                  backgroundImage: NetworkImage(user.photo),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 20,
                 ),
                 CustomDetails(
                   title: "Nome:",
-                  subtitle: "Jaque",
+                  subtitle: user.name,
                 ),
               ],
             ),
             const SizedBox(
               height: 20,
             ),
-            const CustomDetails(
+            CustomDetails(
               title: "Nome de usuario:",
-              subtitle: "JaqueViieira",
+              subtitle: user.name,
             ),
-            const CustomDetails(
+            CustomDetails(
               title: "Email:",
-              subtitle: "Jaquelinevieira1010@outlook.com",
+              subtitle: user.email,
             ),
-            const CustomDetails(
+            CustomDetails(
               title: "Criado em:",
-              subtitle: "18/07/2022",
+              subtitle: user.createAt,
+            ),
+            CustomDetails(
+              title: "Atualizado em:",
+              subtitle: user.updateAt,
             ),
             const CustomDetails(
               title: "Atualizado em:",

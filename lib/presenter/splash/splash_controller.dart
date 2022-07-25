@@ -6,7 +6,7 @@ class SplashController extends GetxController {
   @override
   void onInit() async {
     await Future.delayed(const Duration(seconds: 2));
-    Get.toNamed(ClientsDetailsPage.route);
+    Get.toNamed(HomePage.route);
     super.onInit();
   }
 }

@@ -21,7 +21,7 @@ class EditClientPage extends GetView<EditClientController> {
           'Editar informações',
           style: TextStyle(
             color: Colors.black,
-            fontSize: 22,
+            fontSize: 30,
             fontWeight: FontWeight.w500,
           ),
         ),

@@ -2,6 +2,7 @@ import 'package:clients_manager/presenter/splash/splash_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'app_bindings.dart';
 import 'routes/app_pages.dart';
 
 class AppWidget extends StatelessWidget {
@@ -16,6 +17,7 @@ class AppWidget extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       getPages: AppPages.pages,
+      initialBinding: AppBindings(),
       initialRoute: SplashPage.route,
     );
   }

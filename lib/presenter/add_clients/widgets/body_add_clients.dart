@@ -8,22 +8,33 @@ class BodyAddClients extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double height = MediaQuery.of(context).size.height;
+    double width = MediaQuery.of(context).size.width;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
-      children: const [
+      children: [
         DefaultTextFormWidget(
+          height: height,
+          width: width,
           labelText: "Nome",
           prefixIcon: Icons.person_add_alt_rounded,
         ),
         DefaultTextFormWidget(
+          height: height,
+          width: width,
           labelText: "Nome de Usuário",
           prefixIcon: Icons.people_alt,
         ),
         DefaultTextFormWidget(
+          height: height,
+          width: width,
           labelText: "Email",
           prefixIcon: Icons.email,
         ),
-        DefaultTextButton(title: 'Adicionar foto'),
+        DefaultTextButton(
+          title: 'Adicionar foto',
+          taped: () {},
+        ),
       ],
     );
   }

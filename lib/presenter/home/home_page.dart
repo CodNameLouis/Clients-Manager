@@ -1,9 +1,10 @@
+import 'package:clients_manager/shared/widgets/default_text_button.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import './home_controller.dart';
+import '../../routes/routes_imports.dart';
 import 'widgets/body_home.dart';
-import 'widgets/custom_bottom_navigation_bar.dart';
 
 class HomePage extends GetView<HomeController> {
   const HomePage({Key? key}) : super(key: key);
@@ -28,10 +29,13 @@ class HomePage extends GetView<HomeController> {
             ),
           ),
         ),
-        body: const SingleChildScrollView(
-          child: BodyHome(),
+        body: const BodyHome(),
+        bottomNavigationBar: DefaultTextButton(
+          title: 'Adicionar',
+          taped: () {
+            Get.toNamed(AddClientsPage.route);
+          },
         ),
-        bottomNavigationBar: const CustomBottomNavigationBar(),
       ),
     );
   }
