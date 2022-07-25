@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../infra/models/responses/user_response_model.dart';
 import 'custom_details.dart';
 
 class CardDetails extends StatelessWidget {
@@ -7,10 +8,12 @@ class CardDetails extends StatelessWidget {
     Key? key,
     required this.height,
     required this.width,
+    required this.user,
   }) : super(key: key);
 
   final double height;
   final double width;
+  final UserResponseModel user;
 
   @override
   Widget build(BuildContext context) {
@@ -37,40 +40,39 @@ class CardDetails extends StatelessWidget {
         child: Column(
           children: [
             Row(
-              children: const [
+              children: [
                 CircleAvatar(
                   radius: 28,
                   backgroundColor: Colors.purple,
-                  backgroundImage:
-                      NetworkImage("http://loremflickr.com/640/480"),
+                  backgroundImage: NetworkImage(user.photo),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 20,
                 ),
                 CustomDetails(
                   title: "Nome:",
-                  subtitle: "Jaque",
+                  subtitle: user.name,
                 ),
               ],
             ),
             const SizedBox(
               height: 20,
             ),
-            const CustomDetails(
+            CustomDetails(
               title: "Nome de usuario:",
-              subtitle: "JaqueViieira",
+              subtitle: user.name,
             ),
-            const CustomDetails(
+            CustomDetails(
               title: "Email:",
-              subtitle: "Jaquelinevieira1010@outlook.com",
+              subtitle: user.email,
             ),
-            const CustomDetails(
+            CustomDetails(
               title: "Criado em:",
-              subtitle: "18/07/2022",
+              subtitle: user.createAt,
             ),
-            const CustomDetails(
+            CustomDetails(
               title: "Atualizado em:",
-              subtitle: "20/07/2022",
+              subtitle: user.updateAt,
             ),
           ],
         ),

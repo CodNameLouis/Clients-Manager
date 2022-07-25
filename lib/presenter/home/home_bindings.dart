@@ -7,7 +7,6 @@ class HomeBindings implements Bindings {
   @override
   void dependencies() {
     Get.lazyPut(() => UserRepository(Get.find()));
-    // Get.lazyPut(() => UserProvider(Get.find()));
     Get.put(HomeController(Get.find()));
   }
 }

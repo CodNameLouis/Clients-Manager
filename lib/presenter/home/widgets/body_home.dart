@@ -15,13 +15,13 @@ class BodyHome extends GetView<HomeController> {
       builder: (_control) {
         return ListView.builder(
           scrollDirection: Axis.vertical,
-          itemCount: controller.user.length >= 50 ? 50 : controller.user.length,
+          itemCount: controller.users.length,
           itemBuilder: (BuildContext context, index) {
-            final users = controller.user[index];
+            final users = controller.users[index];
             return CardInfoClients(
               height: height,
               width: width,
-              user: users!,
+              user: users,
             );
           },
         );

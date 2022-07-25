@@ -33,6 +33,7 @@ class UserResponseModel {
     return result;
   }
 
+  // {createdAt: 2022-07-19T00:25:37.846Z, name: Francisco Abernathy, photo: http://loremflickr.com/640/480, email: Rae.Green@hotmail.com, username: Gonzalo45, updateAt: 2022-07-19T08:27:59.370Z, id: 3}
   factory UserResponseModel.fromMap(Map<String, dynamic> map) {
     return UserResponseModel(
       createAt: map['createAt'] ?? '',
